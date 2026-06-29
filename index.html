@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO DE BACK-END: foco em álbum de figurinhas da copa, coleção digital e troca de stickers -->
+    <title>Álbum de Figurinhas da Copa | Sticker Album Copa Figurinha</title>
+    <meta name="description" content="Álbum de figurinhas da copa: organize seu sticker album copa figurinha, colecione figurinhas da copa do mundo, troque repetidas e complete sua coleção digital online.">
+    <meta name="keywords" content="álbum de figurinhas, álbum digital de figurinhas, álbum virtual de figurinhas, álbum online de futebol, coleção de figurinhas, figurinhas da copa, álbum da copa do mundo, colecionar figurinhas, trocar figurinhas, completar álbum, jogadores da copa, seleções da copa, craques do futebol, futebol mundial, campeonato mundial, seleção brasileira, seleção argentina, seleção francesa, seleção alemã, seleção espanhola, seleção portuguesa, seleção inglesa, seleção italiana, seleção uruguaia, seleção holandesa, seleção belga, seleção croata, seleção mexicana, seleção japonesa, seleção sul-coreana, seleção americana, seleção colombiana, seleção chilena, seleção marroquina, seleção senegalesa, seleção suíça, seleção dinamarquesa, Lionel Messi, Cristiano Ronaldo, Neymar, Kylian Mbappé, Vinícius Júnior, Jude Bellingham, Lamine Yamal, Erling Haaland, Harry Kane, Mohamed Salah, Kevin De Bruyne, Robert Lewandowski, Pedri, Jamal Musiala, Rodri, Pelé, Diego Maradona, Ronaldo Nazário, Ronaldinho Gaúcho, Zinedine Zidane, figurinhas raras, figurinhas lendárias, figurinhas douradas, figurinhas especiais, figurinhas premium, álbum interativo, álbum colecionável, coleção digital de futebol, estatísticas dos jogadores, artilheiros da copa, melhores jogadores do mundo, campeões mundiais, finais da copa do mundo, jogos históricos da copa, ranking da FIFA, história das seleções, recordes da copa do mundo, maiores artilheiros, maiores campeões, craques históricos, futebol internacional, torneios mundiais, paixão pelo futebol, coleção completa da copa, álbum oficial de futebol, figurinhas dos craques, coleção de seleções, jogadores históricos, estrelas do futebol mundial">
+    
+    <!-- Dados Estruturados para o Google entender a dinâmica de pacotinho/coleção -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Pacotinho de Figurinhas Silhueta em Inox - Copa do Mundo",
+      "image": "https://seusite.com",
+      "description": "Pacotinho com figurinhas sortidas em aço inox cortadas a laser. Perfeitas para colecionar e trocar.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Coleção Black Gold"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "BRL",
+        "price": "49.90", 
+        "availability": "https://schema.orgInStock"
+      }
+    }
+    </script>
+
+    <style>
+        /* DESIGN BLACK & GOLD PREMIUM (Preto Absoluto e Dourado) */
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            min-width: 320px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            min-height: 100vh;
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #0a0a0a; /* Preto Puro */
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .player-background {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .player-card {
+            position: absolute;
+            width: 200px;
+            border-radius: 18px;
+            overflow: hidden;
+          
+    
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+            transform-origin: center;
+        }
+
+        .player-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            image-rendering: auto;
+        }
+
+        .player-card.card1 { top: 6%; left: 4%; transform: rotate(-14deg) scale(0.96); }
+        .player-card.card2 { top: 9%; right: 4%; transform: rotate(12deg) scale(1.0); }
+        .player-card.card3 { top: 40%; left: 14%; transform: rotate(-8deg) scale(0.98); }
+        .player-card.card4 { top: 28%; left: 80%; transform: rotate(10deg) scale(1.02);margin-top: 20%; }
+        .player-card.card5 { bottom: 20%; left: 10%; transform: rotate(-6deg) scale(1.04); }
+        .player-card.card6 { bottom: 10%; right: 10%; transform: rotate(8deg) scale(0.96); }
+        .player-card.card7 { top: 6%; left: 4%; transform: rotate(-14deg) scale(0.96); }
+        .player-card.card8 { top: 9%; right: 4%; transform: rotate(12deg) scale(1.0); }
+        .player-card.card9 { top: 40%; left: 14%; transform: rotate(-8deg) scale(0.98); margin-top: 10%; }
+        .player-card.card10 { top: 28%; left: 80%; transform:   rotate(10deg) scale(1.02);margin-top: 20%; }
+        .player-card.card11 { bottom: 20%; left: 10%; transform: rotate(-6deg) scale(1.04); }
+        .player-card.card12 { bottom: 10%; right: 10%; transform: rotate(8deg) scale(0.96); }
+        .player-card.card13 { bottom: 10%; right: 10%; transform: rotate(8deg) scale(0.96); }
+        .player-card.card14 { bottom: 10%; right: 10%; transform: rotate(8deg) scale(0.96); }
+        
+
+        header {
+            background: linear-gradient(180deg, #161616 0%, #0a0a0a 100%);
+            padding: 60px 20px 40px 20px;
+            border-bottom: 2px solid #d4af37;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .badge-ouro {
+            background: linear-gradient(90deg, #d4af37, #f3e5ab);
+            color: #000;
+            padding: 5px 20px;
+            font-weight: bold;
+            font-size: 0.85em;
+            border-radius: 3px;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto 50px auto;
+            background: #111111;
+            padding: 40px 30px;
+            border-radius: 8px;
+            border: 1px solid #222222;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+            position: relative;
+            z-index: 1;
+        }
+        .foto-produto {
+            width: 100%;
+            max-width: 340px;
+            border-radius: 4px;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.25); /* Brilho dourado no pacotinho */
+            margin: 25px 0;
+            border: 1px solid #d4af37;
+        }
+        p {
+            font-size: 1.15em;
+            line-height: 1.7;
+            color: #cccccc;
+        }
+        .destaque-gold {
+            color: #d4af37;
+            font-weight: bold;
+        }
+        .regras-colecao {
+            text-align: left;
+            display: inline-block;
+            margin: 25px 0;
+            padding: 0;
+            list-style: none;
+        }
+        .regras-colecao li {
+            font-size: 1.1em;
+            margin-bottom: 12px;
+            color: #e6e6e6;
+        }
+        .regras-colecao li::before {
+            content: "🏆 ";
+        }
+        .chamada-acao {
+            font-size: 1.6em;
+            color: #d4af37;
+            font-weight: bold;
+            margin: 30px 0 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-tik {
+            display: inline-block;
+            background: linear-gradient(90deg, #d4af37, #b8860b);
+            color: #000;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-tik:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
+            background: linear-gradient(90deg, #f3e5ab, #d4af37);
+        }
+
+.btn-tik2 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #f6a503;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(255, 170, 0, 0.4);
+    transition: all 0.3s ease;
+    margin: 14px auto 12px;
+    max-width: 320px;
+    width: min(100%, 320px);
+}
+
+/* Efeito de passar o mouse no botão */
+.btn-tik2:hover {
+    background-color: #cd7700;
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.6);
+}
+
+     img[src*="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg-JWMAX1apzfQmivmnEyvCijkgY0i-fbkVQPn8nDwrg&s=10"], .container img { 
+    width: 100px; /* Altere esse valor (ex: 120px ou 180px) para achar o tamanho ideal */
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto; /* Centraliza a imagem e cria um espaço para os botões */
+}
+    
+
+
+
+           .btn-album {
+            margin-top: 10px;
+            display: inline-block;
+            background: linear-gradient(90deg, #d4af37, #b8860b);
+            color: #000;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-album:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
+            background: linear-gradient(90deg, #f3e5ab, #d4af37);
+        }
+
+        
+           .btn-album2 {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            margin: 14px auto 0;
+            background: linear-gradient(90deg, #d4af37, #b8860b);
+            color: #000;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+            max-width: 320px;
+            width: min(100%, 320px);
+        }
+        .btn-album2:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
+            background: linear-gradient(90deg, #f3e5ab, #d4af37);
+        }
+
+        .badge-ouro {
+            margin-top: 0;
+        }
+
+        video {
+            display: block;
+            width: 50%;
+            max-width: 100px;
+            height: auto;
+            margin: 24px auto;
+            border-radius: 14px;
+            background: #000;
+        }
+
+        .container video {
+            width: 100%;
+            max-width: 70%;
+        }
+
+        @media (max-width: 920px) {
+            header {
+                padding: 48px 18px 28px;
+            }
+
+            .container {
+                margin: 16px 18px 40px;
+                padding: 32px 24px;
+            }
+
+            .container h2 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 640px) {
+            body {
+                text-align: center;
+            }
+
+            header {
+                padding: 36px 16px 24px;
+            }
+
+            h1 {
+                font-size: 1.9rem;
+            }
+
+            header p {
+                font-size: 0.95rem;
+                margin-bottom: 18px;
+                padding: 0 12px;
+            }
+
+            .chamada-acao {
+                font-size: 1.15em;
+                margin: 20px 0 12px;
+                padding: 0 12px;
+            }
+
+            .btn-tik,
+            .btn-album,
+            .btn-album2,
+            .btn-tik2 {
+                width: 100%;
+                max-width: 100%;
+                padding: 14px 18px;
+                font-size: 0.95em;
+                margin: 10px auto;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .btn-tik2,
+            .btn-album2 {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            .player-background,
+            header .player-card,
+            .player-card {
+                display: none !important;
+            }
+
+            .regras-colecao {
+                margin: 18px auto;
+                padding: 0 10px;
+                width: min(100%, 100%);
+            }
+
+            .regras-colecao li {
+                font-size: 1rem;
+            }
+
+            video {
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+            }
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+            position: relative;
+            align-items: LEFT;
+        }
+    </style>
+</head>
+<body>
+    <div class="player-background">
+        <div class="player-card card1"><img src="1-leonel_messi-argentina.jpeg" alt="Lionel Messi"></div>
+        <div class="player-card card2"><img src="3-cristiano_ronaldo_portugal.jpeg" alt="Cristiano Ronaldo"></div>
+        <div class="player-card card3"><img src="27-jamal_musiala_alemanha.jpeg" alt="Pelé"></div>
+        <div class="player-card card4"><img src="16-ronaldinho_gaucho_brasil.jpeg" alt="Ronaldinho Gaucho"></div>
+        <div class="player-card card5"><img src="31-Casemiro-Brasil.jpeg" alt="Casemiro"></div>
+        <div class="player-card card6"><img src="32-Endrick-Brasil.jpeg" alt="Florian Wirtz"></div>
+    </div>
+
+    <header>
+        <div class="player-card card7"><img src="1-leonel_messi-argentina.jpeg" alt="Cristiano Ronaldo"></div>
+        <div class="player-card card8"><img src="53-florian_wirtz-alemanha.jpeg" alt="Neymar"></div>
+        <div class="player-card card9"><img src="4-Neymar-Brasil.jpeg" alt="Ronaldinho Gaucho"></div>
+        <div class="player-card card10"><img src="19-pele-brasil.jpeg" alt="Pelé"></div>
+            <img src="logo.png" alt="Sticker Color" class="logo">
+        </div>
+            <div class="chamada-acao">Garanta seu Sticker Color já!!!</div>
+        <h1>Sticker color</h1>
+        <p style="color: #d4af37; font: size 27px;;">Rasgou, abriu, colecionou.</p>
+         <a href="https://www.tiktok.com/@stickcolors" class="btn-tik2" target="_blank">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg-JWMAX1apzfQmivmnEyvCijkgY0i-fbkVQPn8nDwrg&s=10" alt="">
+            Clique aqui 
+            <br>
+              <br>
+            e  Adquira Já o seu!
+        </a>
+             <a href="https://stickercolor.com.br/" class="btn-album2" target="_blank">
+            ir para o album
+        </a>
+    </header>
+
+    <div class="container">
+        <h2>Abra seu pacotinho e comece a trocar!</h2>
+        <p>A mesma emoção de colecionar o álbum da Copa, só que infinitamente mais duravel e divertido. Nossos pacotinhos vêm com <span class="destaque-gold">figurinhas de silhueta sortidas</span> feitas em aço inox premium cortado a laser.</p>
+        
+        <!-- O Google lê os termos de troca e álbum no ALT para puxar a galera copiana -->
+       <video controls>
+  <source src="Download (1).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+        <ul class="regras-colecao">
+            <li><strong>Pacotinhos 100% sortidos:</strong> sinta a adrenalina de tirar um craque épico!</li>
+            <li><strong>Item Indestrutível:</strong> figurinhas em inox legítimo que duram para sempre.</li>
+            <li><strong>Movimente a resenha:</strong> junte os amigos, monte seu álbum e troque os seus sticker color!</li>
+        </ul>
+        
+        <div class="chamada-acao">Garanta seus pacotinhos antes que esgote!</div>
+
+        <a href="https://www.tiktok.com/@stickcolors" class="btn-tik" target="_blank">
+            Comprar Pacotinho no TikTok Shop
+            <br>
+        </a>
+             <a href="https://stickercolor.com.br/" class="btn-album" target="_blank">
+            ir para o album
+        </a>
+    </div>
+
+</body>
+</html>
