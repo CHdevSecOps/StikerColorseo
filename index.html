@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO DE BACK-END: foco em álbum de figurinhas da copa, coleção digital e troca de stickers -->
-    <title>Álbum de Figurinhas da Copa | Sticker Album Copa Figurinha</title>
+    <title>Seo Album STICKER COLOR</title>
     <meta name="description" content="Álbum de figurinhas da copa: organize seu sticker album copa figurinha, colecione figurinhas da copa do mundo, troque repetidas e complete sua coleção digital online.">
     <meta name="keywords" content="álbum de figurinhas, álbum digital de figurinhas, álbum virtual de figurinhas, álbum online de futebol, coleção de figurinhas, figurinhas da copa, álbum da copa do mundo, colecionar figurinhas, trocar figurinhas, completar álbum, jogadores da copa, seleções da copa, craques do futebol, futebol mundial, campeonato mundial, seleção brasileira, seleção argentina, seleção francesa, seleção alemã, seleção espanhola, seleção portuguesa, seleção inglesa, seleção italiana, seleção uruguaia, seleção holandesa, seleção belga, seleção croata, seleção mexicana, seleção japonesa, seleção sul-coreana, seleção americana, seleção colombiana, seleção chilena, seleção marroquina, seleção senegalesa, seleção suíça, seleção dinamarquesa, Lionel Messi, Cristiano Ronaldo, Neymar, Kylian Mbappé, Vinícius Júnior, Jude Bellingham, Lamine Yamal, Erling Haaland, Harry Kane, Mohamed Salah, Kevin De Bruyne, Robert Lewandowski, Pedri, Jamal Musiala, Rodri, Pelé, Diego Maradona, Ronaldo Nazário, Ronaldinho Gaúcho, Zinedine Zidane, figurinhas raras, figurinhas lendárias, figurinhas douradas, figurinhas especiais, figurinhas premium, álbum interativo, álbum colecionável, coleção digital de futebol, estatísticas dos jogadores, artilheiros da copa, melhores jogadores do mundo, campeões mundiais, finais da copa do mundo, jogos históricos da copa, ranking da FIFA, história das seleções, recordes da copa do mundo, maiores artilheiros, maiores campeões, craques históricos, futebol internacional, torneios mundiais, paixão pelo futebol, coleção completa da copa, álbum oficial de futebol, figurinhas dos craques, coleção de seleções, jogadores históricos, estrelas do futebol mundial">
     
@@ -58,9 +58,9 @@
         .player-background {
             position: absolute;
             inset: 0;
-            z-index: 0;
-            pointer-events: none;
-            overflow: hidden;
+            z-index: 2; /* acima do header */
+            pointer-events: none; /* não bloquear cliques do header */
+            overflow: visible; /* permitir que as imagens extrapolem a área sem corte */
         }
 
         .player-card {
@@ -68,10 +68,12 @@
             width: 200px;
             border-radius: 18px;
             overflow: hidden;
-          
+           
     
             box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
             transform-origin: center;
+            z-index: 3; /* garantir que cada card fique acima do header */
+            pointer-events: auto; /* permitir interação se necessário */
         }
 
         .player-card img {
@@ -81,10 +83,17 @@
             image-rendering: auto;
         }
 
-        .player-card.card1 { top: 6%; left: 4%; transform: rotate(-14deg) scale(0.96); }
-        .player-card.card2 { top: 9%; right: 4%; transform: rotate(12deg) scale(1.0); }
+        /* estilos para cards gerados dinamicamente nas laterais */
+        .player-card.extra-card {
+            width: 140px;
+            opacity: 0.98;
+            box-shadow: 0 14px 40px rgba(0,0,0,0.45);
+        }
+
+        .player-card.card1 { top: 6%; left: 4%; transform: rotate(-14deg) scale(0.96);  margin-top: 30%; }
+        .player-card.card2 { top: 9%; right: 4%; transform: rotate(12deg) scale(1.0); margin-top: 20%; }
         .player-card.card3 { top: 40%; left: 14%; transform: rotate(-8deg) scale(0.98); }
-        .player-card.card4 { top: 28%; left: 80%; transform: rotate(10deg) scale(1.02);margin-top: 20%; }
+        .player-card.card4 { top: 28%; left: 80%; transform: rotate(10deg) scale(1.02);margin-top: 90%; }
         .player-card.card5 { bottom: 20%; left: 10%; transform: rotate(-6deg) scale(1.04); }
         .player-card.card6 { bottom: 10%; right: 10%; transform: rotate(8deg) scale(0.96); }
         .player-card.card7 { top: 6%; left: 4%; transform: rotate(-14deg) scale(0.96); }
@@ -95,6 +104,20 @@
         .player-card.card12 { bottom: 10%; right: 10%; transform: rotate(8deg) scale(0.96); }
         .player-card.card13 { bottom: 10%; right: 10%; transform: rotate(8deg) scale(0.96); }
         .player-card.card14 { bottom: 10%; right: 10%; transform: rotate(8deg) scale(0.96); }
+        /* posições adicionais estáticas criadas manualmente (sem JS) */
+        .player-card.card15 { top: 18%; left: 6%; transform: rotate(-6deg) scale(0.94); width: 150px; }
+        .player-card.card16 { top: 34%; left: 6%; transform: rotate(-4deg) scale(0.96); width: 150px; }
+        .player-card.card17 { top: 50%; left: 6%; transform: rotate(6deg) scale(0.96); width: 150px; }
+        .player-card.card18 { top: 68%; left: 6%; transform: rotate(8deg) scale(0.94); width: 150px; }
+
+        .player-card.card19 { top: 18%; right: 6%; transform: rotate(6deg) scale(0.94); width: 150px; }
+        .player-card.card20 { top: 34%; right: 6%; transform: rotate(4deg) scale(0.96); width: 150px; }
+        .player-card.card21 { top: 50%; right: 6%; transform: rotate(-6deg) scale(0.96); width: 150px; }
+        .player-card.card22 { top: 68%; right: 6%; transform: rotate(-8deg) scale(0.94); width: 150px; }
+        .player-card.card23 { top: 12%; left: 20%; transform: rotate(-6deg) scale(0.95); width: 160px;margin-top: 80%; }
+        .player-card.card24 { top: 26%; right: 20%; transform: rotate(8deg) scale(0.95); width: 160px; }
+        .player-card.card25 { top: 58%; left: 22%; transform: rotate(4deg) scale(0.96); width: 150px; }
+        .player-card.card26 { top: 62%; right: 22%; transform: rotate(-4deg) scale(0.96); width: 150px; }
         
 
         header {
@@ -231,6 +254,7 @@
 
 
 
+
            .btn-album {
             margin-top: 10px;
             display: inline-block;
@@ -281,6 +305,7 @@
         }
 
         video {
+            margin-left:80%;
             display: block;
             width: 50%;
             max-width: 100px;
@@ -390,14 +415,26 @@
     <div class="player-background">
         <div class="player-card card1"><img src="1-leonel_messi-argentina.jpeg" alt="Lionel Messi"></div>
         <div class="player-card card2"><img src="3-cristiano_ronaldo_portugal.jpeg" alt="Cristiano Ronaldo"></div>
-        <div class="player-card card3"><img src="27-jamal_musiala_alemanha.jpeg" alt="Pelé"></div>
-        <div class="player-card card4"><img src="16-ronaldinho_gaucho_brasil.jpeg" alt="Ronaldinho Gaucho"></div>
+        <div class="player-card card3"><img src="27-jamal_musiala_alemanha.jpeg" alt="Jamal Musiala"></div>
+        <div class="player-card card4"><img src="16-ronaldinho_gaucho_brasil.jpeg" alt="Ronaldinho Gaúcho"></div>
         <div class="player-card card5"><img src="31-Casemiro-Brasil.jpeg" alt="Casemiro"></div>
-        <div class="player-card card6"><img src="32-Endrick-Brasil.jpeg" alt="Florian Wirtz"></div>
+        <div class="player-card card6"><img src="32-Endrick-Brasil.jpeg" alt="Endrick"></div>
+        <div class="player-card card15"><img src="images/epicos/23-emiliano_martinez-argentina.jpeg" alt="Emiliano Martinez"></div>
+        <div class="player-card card16"><img src="images/epicos/24-james_rodrigues-colombia.jpeg" alt="James Rodriguez"></div>
+        <div class="player-card card17"><img src="images/epicos/28-thibaut_courtois-belgica.jpeg" alt="Thibaut Courtois"></div>
+        <div class="player-card card18"><img src="images/epicos/29-alisson_becker-brasil.jpeg" alt="Alisson Becker"></div>
+        <div class="player-card card19"><img src="images/epicos/30-Marquinhos-Brasil.jpeg" alt="Marquinhos"></div>
+        <div class="player-card card20"><img src="images/epicos/33-estevao-brasil.jpeg" alt="Estevão"></div>
+        <div class="player-card card21"><img src="images/epicos/34-Raphinha_Brasil.jpeg" alt="Raphinha"></div>
+        <div class="player-card card22"><img src="images/raros/2-kylian_mbappe-franca.jpeg" alt="Kylian Mbappé"></div>
+        <div class="player-card card23"><img src="images/raros/10-luka_modric-croacia.jpeg" alt="Luka Modrić"></div>
+        <div class="player-card card24"><img src="images/legend/14-zinedine_zidane-franca.jpeg" alt="Zinédine Zidane"></div>
+        <div class="player-card card25"><img src="images/nova_pasta/72-gabriel_martininelli-brasil.jpeg" alt="Gabriel Martinelli"></div>
+        <div class="player-card card26"><img src="images/raros/5-vinicios_junior-brasil.jpeg" alt="Vinícius Júnior"></div>
     </div>
 
     <header>
-        <div class="player-card card7"><img src="1-leonel_messi-argentina.jpeg" alt="Cristiano Ronaldo"></div>
+        <div class="player-card card7"><img src="images/raros/6-jude_bellingham-inglaterra.jpeg" alt="Jude Bellingham"></div>
         <div class="player-card card8"><img src="53-florian_wirtz-alemanha.jpeg" alt="Neymar"></div>
         <div class="player-card card9"><img src="4-Neymar-Brasil.jpeg" alt="Ronaldinho Gaucho"></div>
         <div class="player-card card10"><img src="19-pele-brasil.jpeg" alt="Pelé"></div>
@@ -425,6 +462,56 @@
         <!-- O Google lê os termos de troca e álbum no ALT para puxar a galera copiana -->
        <video controls>
   <source src="Download (1).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (2).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (3).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (4).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (5).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (6).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (7).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (8).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (9).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (10).mp4" type="video/mp4">
+  Seu navegador não suporta este elemento de vídeo.
+</video>
+
+     <video controls>
+  <source src="Download (11).mp4" type="video/mp4">
   Seu navegador não suporta este elemento de vídeo.
 </video>
 
